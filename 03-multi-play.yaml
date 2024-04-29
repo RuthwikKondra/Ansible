@@ -2,8 +2,8 @@
   hosts: localhost
   tasks:
     - name: PLAY-1 and TASK-1
-    ansible.builtin.plugin:
-      msg: "Hello I am From PLAY-1 & Task-1"
+      ansible.builtin.plugin:
+        msg: "Hello I am From PLAY-1 & Task-1"
   
 - name: Play-2
   hosts: localhost
