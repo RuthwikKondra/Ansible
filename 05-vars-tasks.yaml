@@ -1,5 +1,5 @@
 - name: variables
-  hosts: localhosts
+  hosts: localhost
   vars: #declaration of variables
     Course: "Terraform"
     Trainer: "Siva"
@@ -10,7 +10,7 @@
       Course: "Devops"
     ansible.builtin.debug:
       msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
-      
+
   - name: print information
     ansible.builtin.debug:
       msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
